@@ -28,30 +28,30 @@ $(function(){
       $(".regular_2").slick({
         infinite : true,
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '10px',
         slidesToShow: 3,
         dots : true,
-        arrows: false
-        /*responsive: [
-    {
-      breakpoint: 768,
+        arrows: false,
+        responsive: [ {
+      breakpoint: 1200,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+        centerPadding: '10px',
+        slidesToShow: 2
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 780,
       settings: {
         arrows: false,
         centerMode: true,
+        dots : false,
         centerPadding: '40px',
         slidesToShow: 1
       }
     }
-  ]*/
+  ]
       });
 
       $('.regular_4').slick({
@@ -59,18 +59,18 @@ $(function(){
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 3,
-        /*responsive: [
+        responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 1200,
             settings: {
-              arrows: false,
+              arrows: true,
               centerMode: true,
               centerPadding: '40px',
               slidesToShow: 3
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 780,
             settings: {
               arrows: false,
               centerMode: true,
@@ -78,12 +78,12 @@ $(function(){
               slidesToShow: 1
             }
           }
-        ]*/
+        ]
       });
 
      
       $( window ).scroll( function() {
-        if ( $( this ).scrollTop() > 200 ) {
+        if ( $( this ).scrollTop() > 3000 ) {
           $( '.up' ).fadeIn();
         } else {
           $( '.up' ).fadeOut();
